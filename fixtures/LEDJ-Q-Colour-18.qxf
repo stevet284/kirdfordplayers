@@ -8,7 +8,7 @@
  </Creator>
  <Manufacturer>Ledj</Manufacturer>
  <Model>Q Colour 18</Model>
- <Type>Strobe</Type>
+ <Type>Color Changer</Type>
  <Channel Name="Red">
   <Group Byte="0">Intensity</Group>
   <Colour>Red</Colour>

@@ -11,9 +11,7 @@
    <BeatGenerator BeatType="Internal" BPM="120"/>
    <NetworkServer Type="Native" AutoStart="False" Name="QLC+_C0A8019B" Password=""/>
    <Universe Name="Universe 1" ID="0">
-    <Output Plugin="DMX USB" Name="FT232R USB UART (S/N: A10848J7)" UID="" Line="0">
-     <PluginParameters UniverseChannels="255"/>
-    </Output>
+    <Output Plugin="DMX USB" Name="None" UID="None" Line="0"/>
    </Universe>
    <Universe Name="Universe 2" ID="1"/>
    <Universe Name="Universe 3" ID="2"/>
@@ -38,6 +36,16 @@
    <Universe>0</Universe>
    <Address>0</Address>
    <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic RGB</Model>
+   <Mode>RGB</Mode>
+   <ID>2</ID>
+   <Name>Parc 100-E [259]</Name>
+   <Universe>0</Universe>
+   <Address>258</Address>
+   <Channels>3</Channels>
   </Fixture>
   <Fixture>
    <Manufacturer>QTX</Manufacturer>
@@ -134,7 +142,7 @@
    <Model>Q Colour 18</Model>
    <Mode>6 Channel</Mode>
    <ID>18</ID>
-   <Name>Q Colour 18 [19]</Name>
+   <Name>Q Colour 18 [130]</Name>
    <Universe>0</Universe>
    <Address>129</Address>
    <Channels>6</Channels>
@@ -144,7 +152,7 @@
    <Model>Q Colour 18</Model>
    <Mode>6 Channel</Mode>
    <ID>19</ID>
-   <Name>Q Colour 18 [20]</Name>
+   <Name>Q Colour 18 [138]</Name>
    <Universe>0</Universe>
    <Address>137</Address>
    <Channels>6</Channels>
@@ -213,26 +221,73 @@
   </FixtureGroup>
   <Function ID="0" Type="Scene" Name="All PARs to Blue">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,255,3,255</FixtureVal>
+   <FixtureVal ID="7">0,255,3,255,6,255</FixtureVal>
+   <FixtureVal ID="12">0,255,3,255</FixtureVal>
+   <FixtureVal ID="13">0,255,3,255,6,255</FixtureVal>
+   <FixtureVal ID="14">0,255,3,255</FixtureVal>
+   <FixtureVal ID="15">0,255,3,255,6,255</FixtureVal>
+   <FixtureVal ID="20">0,255,3,255,6,255</FixtureVal>
+   <FixtureVal ID="21">0,255,3,255,6,255</FixtureVal>
+   <FixtureVal ID="22">0,255,3,255,6,255</FixtureVal>
+   <FixtureVal ID="23">0,255,3,255,6,255</FixtureVal>
+   <FixtureGroup ID="0"/>
+   <FixtureGroup ID="1"/>
+   <FixtureGroup ID="2"/>
   </Function>
   <Function ID="1" Type="Scene" Name="Back lights to Green">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
   </Function>
   <Function ID="2" Type="Scene" Name="All PARs to Green">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="15">0,5,3,5,4,0,5,255,6,0,7,0</FixtureVal>
+   <FixtureVal ID="7">0,5,3,5,4,0,5,255,6,0,7,0</FixtureVal>
+   <FixtureVal ID="0">0,5,1,0,2,255,3,0</FixtureVal>
+   <FixtureVal ID="21">0,5,3,5,4,0,5,255,6,0,7,0</FixtureVal>
+   <FixtureVal ID="12">0,5,1,0,2,255,3,0</FixtureVal>
+   <FixtureVal ID="20">0,5,3,5,4,0,5,255,6,0,7,0</FixtureVal>
+   <FixtureVal ID="22">0,5,3,5,4,0,5,255,6,0,7,0</FixtureVal>
+   <FixtureVal ID="14">0,5,1,0,2,255,3,0,5,0,6,0</FixtureVal>
+   <FixtureVal ID="13">0,5,3,5,4,0,5,255,6,0,7,0</FixtureVal>
+   <FixtureVal ID="23">0,5,3,5,4,0,5,255,6,0,7,0</FixtureVal>
+   <FixtureGroup ID="0"/>
+   <FixtureGroup ID="1"/>
+   <FixtureGroup ID="2"/>
   </Function>
   <Function ID="3" Type="Scene" Name="All PARs to YELLOW">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="15">0,255,3,255,4,255,5,255,6,0,7,0</FixtureVal>
+   <FixtureVal ID="7">0,255,3,255,4,255,5,255,6,0,7,0</FixtureVal>
+   <FixtureVal ID="0">0,255,1,255,2,255,3,0</FixtureVal>
+   <FixtureVal ID="21">0,255,3,255,4,255,5,255,6,0,7,0</FixtureVal>
+   <FixtureVal ID="12">0,255,1,255,2,255,3,0</FixtureVal>
+   <FixtureVal ID="20">0,255,3,255,4,255,5,255,6,0,7,0</FixtureVal>
+   <FixtureVal ID="22">0,255,3,255,4,255,5,255,6,0,7,0</FixtureVal>
+   <FixtureVal ID="14">0,255,1,255,2,255,3,0,5,0,6,0</FixtureVal>
+   <FixtureVal ID="13">0,255,3,255,4,255,5,255,6,0,7,0</FixtureVal>
+   <FixtureVal ID="23">0,255,3,255,4,255,5,255,6,0,7,0</FixtureVal>
+   <FixtureGroup ID="0"/>
+   <FixtureGroup ID="1"/>
+   <FixtureGroup ID="2"/>
   </Function>
   <Function ID="4" Type="Scene" Name="All PARs to RED">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,255,1,255</FixtureVal>
+   <FixtureVal ID="7">0,255,3,255,4,255</FixtureVal>
+   <FixtureVal ID="12">0,255,1,255</FixtureVal>
+   <FixtureVal ID="13">0,255,3,255,4,255</FixtureVal>
+   <FixtureVal ID="14">0,255,1,255</FixtureVal>
+   <FixtureVal ID="15">0,255,3,255,4,255</FixtureVal>
+   <FixtureVal ID="20">0,255,3,255,4,255</FixtureVal>
+   <FixtureVal ID="21">0,255,3,255,4,255</FixtureVal>
+   <FixtureVal ID="22">0,255,3,255,4,255</FixtureVal>
+   <FixtureVal ID="23">0,255,3,255,4,255</FixtureVal>
   </Function>
   <Function ID="5" Type="Chaser" Name="Lightning 2">
    <Speed FadeIn="0" FadeOut="0" Duration="2000"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
-   <Step Number="0" FadeIn="0" Hold="2000" FadeOut="0">24</Step>
-   <Step Number="1" FadeIn="0" Hold="1001" FadeOut="0">36</Step>
   </Function>
   <Function ID="6" Type="Scene" Name="Front rail lights on">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -240,20 +295,33 @@
   <Function ID="7" Type="Scene" Name="New Scene" Hidden="True">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
   </Function>
-  <Function ID="8" Type="Scene" Name="4 Outside Trelawneys House">
-   <Speed FadeIn="1000" FadeOut="1000" Duration="0"/>
-  </Function>
+  <Function ID="8" Type="Collection" Name="New Collection 8"/>
   <Function ID="9" Type="Scene" Name="Disco 1">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
   </Function>
   <Function ID="10" Type="Scene" Name="Footlights to red">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="18">0,255,1,0,2,0,3,0,4,255,5,0</FixtureVal>
+   <FixtureVal ID="19">0,255,1,0,2,0,3,0,4,249,5,0</FixtureVal>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0,5,0,6,0</FixtureVal>
+   <FixtureVal ID="1">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="2">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="7">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0</FixtureVal>
+   <FixtureVal ID="10">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0</FixtureVal>
+   <FixtureVal ID="11">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="12">0,0,1,0,2,0,3,0,4,0,5,0,6,0</FixtureVal>
+   <FixtureVal ID="13">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0</FixtureVal>
+   <FixtureVal ID="14">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0</FixtureVal>
+   <FixtureVal ID="15">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0</FixtureVal>
+   <FixtureVal ID="16">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="17">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="20">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0</FixtureVal>
+   <FixtureVal ID="21">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0</FixtureVal>
+   <FixtureVal ID="22">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0</FixtureVal>
+   <FixtureVal ID="23">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0</FixtureVal>
   </Function>
   <Function ID="11" Type="Scene" Name="House lights">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-  </Function>
-  <Function ID="13" Type="Scene" Name="1 - Admiral Benbow">
-   <Speed FadeIn="2000" FadeOut="2000" Duration="0"/>
   </Function>
   <Function ID="14" Type="Scene" Name="Disco 2">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -261,67 +329,28 @@
   <Function ID="15" Type="Scene" Name="New Scene" Hidden="True">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
   </Function>
-  <Function ID="16" Type="Scene" Name="9.1 Deadman's cave">
-   <Speed FadeIn="1000" FadeOut="0" Duration="0"/>
-  </Function>
-  <Function ID="17" Type="Scene" Name="5 Bristol Docks">
-   <Speed FadeIn="1000" FadeOut="1000" Duration="0"/>
-  </Function>
   <Function ID="18" Type="Scene" Name="9 Ultaviolet">
    <Speed FadeIn="1000" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="10">0,255,1,0,2,0,3,0,4,0,5,0,6,255</FixtureVal>
+   <FixtureVal ID="14">0,255,1,0,2,0,3,0,4,0,5,0,6,255</FixtureVal>
+   <FixtureVal ID="12">0,16,1,0,2,0,3,0</FixtureVal>
   </Function>
   <Function ID="19" Type="Scene" Name="New Scene" Hidden="True">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
   </Function>
-  <Function ID="20" Type="Scene" Name="2 Pirates Cove">
-   <Speed FadeIn="1000" FadeOut="1000" Duration="0"/>
-  </Function>
-  <Function ID="21" Type="Scene" Name="3 Village Hall WI">
-   <Speed FadeIn="1000" FadeOut="1000" Duration="0"/>
-  </Function>
   <Function ID="22" Type="Scene" Name="Backstage light">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-  </Function>
-  <Function ID="23" Type="Scene" Name="7 Somewhere on Treasure Island">
-   <Speed FadeIn="2000" FadeOut="1000" Duration="0"/>
-  </Function>
-  <Function ID="24" Type="Scene" Name="6.1 Hispaniola Lights dim">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-  </Function>
-  <Function ID="25" Type="Scene" Name="6 Hispaniola">
-   <Speed FadeIn="1000" FadeOut="1000" Duration="0"/>
-  </Function>
-  <Function ID="26" Type="Scene" Name="10 The Lagoon">
-   <Speed FadeIn="1000" FadeOut="1000" Duration="0"/>
   </Function>
   <Function ID="27" Type="Scene" Name="Front Rail 50%">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
   </Function>
-  <Function ID="29" Type="Scene" Name="8 X Marks the spot">
-   <Speed FadeIn="1000" FadeOut="1000" Duration="0"/>
-  </Function>
   <Function ID="30" Type="Scene" Name="New Scene" Hidden="True">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-  </Function>
-  <Function ID="31" Type="Sequence" Name="6.2 Lightning" BoundScene="30">
-   <Speed FadeIn="0" FadeOut="0" Duration="1000"/>
-   <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <SpeedModes FadeIn="PerStep" FadeOut="Default" Duration="PerStep"/>
-   <Step Number="0" FadeIn="1" Hold="0" FadeOut="0" Values="0"/>
-   <Step Number="1" FadeIn="1" Hold="500" FadeOut="0" Values="0"/>
-   <Step Number="2" FadeIn="1" Hold="1000" FadeOut="0" Values="0"/>
   </Function>
   <Function ID="33" Type="Scene" Name="New Scene" Hidden="True">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
   </Function>
   <Function ID="34" Type="Scene" Name="New Scene" Hidden="True">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-  </Function>
-  <Function ID="35" Type="Scene" Name="9.2 Deadman's cave Brighter">
-   <Speed FadeIn="1000" FadeOut="0" Duration="0"/>
-  </Function>
-  <Function ID="36" Type="Scene" Name="RGBAU Strobe">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
   </Function>
   <Function ID="37" Type="Chaser" Name="Chaser Disco">
@@ -335,9 +364,6 @@
   <Function ID="38" Type="Scene" Name="New Scene" Hidden="True">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
   </Function>
-  <Function ID="41" Type="Scene" Name="RGBAUV">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-  </Function>
   <Monitor DisplayMode="0" ShowLabels="0">
    <Font>Arial,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
    <ChannelStyle>0</ChannelStyle>
@@ -346,21 +372,22 @@
    <StageItem>1</StageItem>
    <FxItem ID="0" XPos="4698.79" YPos="2152.5" ZPos="697.523" ZRot="30"/>
    <FxItem ID="1" XPos="1582.48" YPos="2542.5" ZPos="5429.83" XRot="315"/>
+   <FxItem ID="2" XPos="3781.81" YPos="2467.5" ZPos="4466.14" XRot="330"/>
    <FxItem ID="7" XPos="4711.47" YPos="2197.5" ZPos="2206.72" ZRot="30"/>
-   <FxItem ID="10" XPos="2265.69" YPos="2370" ZPos="4394.42" XRot="315"/>
+   <FxItem ID="10" XPos="2319.72" YPos="2370" ZPos="4412.43" XRot="315"/>
    <FxItem ID="11" XPos="2993.75" YPos="2377.5" ZPos="4479.21"/>
    <FxItem ID="12" XPos="27.1724" YPos="2422.5" ZPos="2107.98" ZRot="330"/>
-   <FxItem ID="13" XPos="1415.35" YPos="2212.5" ZPos="31.0716" XRot="30"/>
-   <FxItem ID="14" XPos="2392.06" YPos="2055" ZPos="34.2422" XRot="30"/>
+   <FxItem ID="13" XPos="1811.54" YPos="2212.5" ZPos="67.0888" XRot="30"/>
+   <FxItem ID="14" XPos="2751.54" YPos="2055" ZPos="48.5098" XRot="30"/>
    <FxItem ID="15" XPos="4724.15" YPos="2242.5" ZPos="3373.49" ZRot="30"/>
-   <FxItem ID="16" XPos="750.067" YPos="2512.5" ZPos="4508.56"/>
-   <FxItem ID="17" XPos="1320.77" YPos="2505" ZPos="4492.25"/>
-   <FxItem ID="18" XPos="4503.35" YPos="90" ZPos="4583.84" XRot="45" YRot="315"/>
-   <FxItem ID="19" XPos="105.034" YPos="30" ZPos="4566.58" XRot="45" YRot="45"/>
+   <FxItem ID="16" XPos="966.17" YPos="2512.5" ZPos="4490.55"/>
+   <FxItem ID="17" XPos="1788.99" YPos="2505" ZPos="4492.25"/>
+   <FxItem ID="18" XPos="4503.35" YPos="90" ZPos="4583.84" XRot="240" YRot="315"/>
+   <FxItem ID="19" XPos="105.034" YPos="30" ZPos="4566.58" XRot="240" YRot="45"/>
    <FxItem ID="20" XPos="19.0234" YPos="2325" ZPos="678.503" ZRot="330"/>
    <FxItem ID="21" XPos="19.0236" YPos="2452.5" ZPos="3246.67" ZRot="330"/>
-   <FxItem ID="22" XPos="4140.77" YPos="2160" ZPos="38.0469" XRot="30"/>
-   <FxItem ID="23" XPos="517.438" YPos="2205" ZPos="36.1445" XRot="30"/>
+   <FxItem ID="22" XPos="3656.37" YPos="2160" ZPos="52.3145" XRot="30"/>
+   <FxItem ID="23" XPos="1021.68" YPos="2205" ZPos="36.1445" XRot="30"/>
    <LightEmitter Res="moving_head.dae" XPos="0" YPos="-0.258688" ZPos="-1.0764e-07"/>
   </Monitor>
  </Engine>
@@ -375,6 +402,16 @@
    <ShowEnableButton>True</ShowEnableButton>
    <Collapsed>False</Collapsed>
    <Disabled>False</Disabled>
+   <Slider Caption="House lights" ID="4" WidgetStyle="Slider" InvertedAppearance="false">
+    <WindowState Visible="True" X="1083" Y="361" Width="78" Height="204"/>
+    <Appearance>
+     <BackgroundColor>4278190080</BackgroundColor>
+    </Appearance>
+    <SliderMode ValueDisplayStyle="Percentage">Level</SliderMode>
+    <Level LowLimit="0" HighLimit="255" Value="0">
+     <Channel Fixture="17">2</Channel>
+    </Level>
+   </Slider>
    <Button Caption="Backstage light" ID="23">
     <WindowState Visible="True" X="958" Y="424" Width="94" Height="94"/>
     <Appearance>
@@ -391,13 +428,75 @@
     <ShowEnableButton>True</ShowEnableButton>
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
+    <Button Caption="9.2 Deadman's cave Brighter" ID="26">
+     <WindowState Visible="True" X="235" Y="298" Width="89" Height="89"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+      <Font>Arial,13,-1,5,700,0,0,0,0,0,0,0,0,0,0,1,Bold</Font>
+     </Appearance>
+     <Function ID="4294967295"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="9.1 Deadman's cave" ID="17">
+     <WindowState Visible="True" X="125" Y="298" Width="89" Height="89"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+      <Font>Arial,13,-1,5,700,0,0,0,0,0,0,0,0,0,0,1,Bold</Font>
+     </Appearance>
+     <Function ID="4294967295"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Page 61" ID="20">
+     <WindowState Visible="True" X="15" Y="408" Width="89" Height="89"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+      <Font>Arial,13,-1,5,700,0,0,0,0,0,0,0,0,0,0,1,Bold</Font>
+     </Appearance>
+     <Function ID="4294967295"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Page 67 Song time" ID="21">
+     <WindowState Visible="True" X="235" Y="408" Width="94" Height="94"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+      <Font>Arial,13,-1,5,700,0,0,0,0,0,0,0,0,0,0,1,Bold</Font>
+     </Appearance>
+     <Function ID="4294967295"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Walkdown" ID="22">
+     <WindowState Visible="True" X="94" Y="534" Width="89" Height="89"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+      <Font>Arial,13,-1,5,700,0,0,0,0,0,0,0,0,0,0,1,Bold</Font>
+     </Appearance>
+     <Function ID="4294967295"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="Lightning 2" ID="15">
+     <WindowState Visible="True" X="235" Y="47" Width="89" Height="89"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Function ID="5"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="8 X Marks the spot" ID="13">
+     <WindowState Visible="True" X="125" Y="172" Width="89" Height="89"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+      <Font>Arial,13,-1,5,700,0,0,0,0,0,0,0,0,0,0,1,Bold</Font>
+     </Appearance>
+     <Function ID="4294967295"/>
+     <Action>Toggle</Action>
+    </Button>
     <Button Caption="7 Somewhere on Treasure Island" ID="12">
      <WindowState Visible="True" X="15" Y="172" Width="89" Height="89"/>
      <Appearance>
       <BackgroundColor>4282664004</BackgroundColor>
       <Font>Arial,13,-1,5,700,0,0,0,0,0,0,0,0,0,0,1,Bold</Font>
      </Appearance>
-     <Function ID="23"/>
+     <Function ID="4294967295"/>
      <Action>Toggle</Action>
     </Button>
     <Button Caption="9 Ultaviolet" ID="14">
@@ -409,75 +508,13 @@
      <Function ID="18"/>
      <Action>Toggle</Action>
     </Button>
-    <Button Caption="Page 61" ID="20">
-     <WindowState Visible="True" X="15" Y="408" Width="89" Height="89"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-      <Font>Arial,13,-1,5,700,0,0,0,0,0,0,0,0,0,0,1,Bold</Font>
-     </Appearance>
-     <Function ID="8"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Page 67 Song time" ID="21">
-     <WindowState Visible="True" X="235" Y="408" Width="94" Height="94"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-      <Font>Arial,13,-1,5,700,0,0,0,0,0,0,0,0,0,0,1,Bold</Font>
-     </Appearance>
-     <Function ID="8"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="9.2 Deadman's cave Brighter" ID="26">
-     <WindowState Visible="True" X="235" Y="298" Width="89" Height="89"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-      <Font>Arial,13,-1,5,700,0,0,0,0,0,0,0,0,0,0,1,Bold</Font>
-     </Appearance>
-     <Function ID="35"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Walkdown" ID="22">
-     <WindowState Visible="True" X="94" Y="534" Width="89" Height="89"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-      <Font>Arial,13,-1,5,700,0,0,0,0,0,0,0,0,0,0,1,Bold</Font>
-     </Appearance>
-     <Function ID="17"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="9.1 Deadman's cave" ID="17">
-     <WindowState Visible="True" X="125" Y="298" Width="89" Height="89"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-      <Font>Arial,13,-1,5,700,0,0,0,0,0,0,0,0,0,0,1,Bold</Font>
-     </Appearance>
-     <Function ID="16"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="8 X Marks the spot" ID="13">
-     <WindowState Visible="True" X="125" Y="172" Width="89" Height="89"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-      <Font>Arial,13,-1,5,700,0,0,0,0,0,0,0,0,0,0,1,Bold</Font>
-     </Appearance>
-     <Function ID="29"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="Lightning 2" ID="15">
-     <WindowState Visible="True" X="235" Y="47" Width="89" Height="89"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Function ID="5"/>
-     <Action>Toggle</Action>
-    </Button>
     <Button Caption="10 The Lagoon" ID="16">
      <WindowState Visible="True" X="125" Y="408" Width="94" Height="94"/>
      <Appearance>
       <BackgroundColor>4282664004</BackgroundColor>
       <Font>Arial,13,-1,5,700,0,0,0,0,0,0,0,0,0,0,1,Bold</Font>
      </Appearance>
-     <Function ID="26"/>
+     <Function ID="4294967295"/>
      <Action>Toggle</Action>
     </Button>
    </Frame>
@@ -488,31 +525,13 @@
     <ShowEnableButton>True</ShowEnableButton>
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
-    <Button Caption="2 Pirates Cove" ID="2">
-     <WindowState Visible="True" X="109" Y="47" Width="94" Height="94"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-      <Font>Arial,13,-1,5,700,0,0,0,0,0,0,0,0,0,0,1,Bold</Font>
-     </Appearance>
-     <Function ID="20"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="4 Outside Trelawneys House" ID="6">
-     <WindowState Visible="True" X="15" Y="157" Width="89" Height="89"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-      <Font>Arial,13,-1,5,700,0,0,0,0,0,0,0,0,0,0,1,Bold</Font>
-     </Appearance>
-     <Function ID="8"/>
-     <Action>Toggle</Action>
-    </Button>
     <Button Caption="3 Village Hall WI" ID="3">
      <WindowState Visible="True" X="219" Y="47" Width="89" Height="89"/>
      <Appearance>
       <BackgroundColor>4282664004</BackgroundColor>
       <Font>Arial,13,-1,5,700,0,0,0,0,0,0,0,0,0,0,1,Bold</Font>
      </Appearance>
-     <Function ID="21"/>
+     <Function ID="4294967295"/>
      <Action>Toggle</Action>
     </Button>
     <Button Caption="1 - Admiral Benbow" ID="1">
@@ -521,20 +540,28 @@
       <BackgroundColor>4282664004</BackgroundColor>
       <Font>Arial Black,13,-1,5,900,0,0,0,0,0,0,0,0,0,0,1,Regular</Font>
      </Appearance>
-     <Function ID="13"/>
+     <Function ID="4294967295"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="4 Outside Trelawneys House" ID="6">
+     <WindowState Visible="True" X="15" Y="157" Width="89" Height="89"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+      <Font>Arial,13,-1,5,700,0,0,0,0,0,0,0,0,0,0,1,Bold</Font>
+     </Appearance>
+     <Function ID="4294967295"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="2 Pirates Cove" ID="2">
+     <WindowState Visible="True" X="109" Y="47" Width="94" Height="94"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+      <Font>Arial,13,-1,5,700,0,0,0,0,0,0,0,0,0,0,1,Bold</Font>
+     </Appearance>
+     <Function ID="4294967295"/>
      <Action>Toggle</Action>
     </Button>
    </Frame>
-   <Slider Caption="House lights" ID="4" WidgetStyle="Slider" InvertedAppearance="false">
-    <WindowState Visible="True" X="1083" Y="361" Width="78" Height="204"/>
-    <Appearance>
-     <BackgroundColor>4278190080</BackgroundColor>
-    </Appearance>
-    <SliderMode ValueDisplayStyle="Percentage">Level</SliderMode>
-    <Level LowLimit="0" HighLimit="255" Value="0">
-     <Channel Fixture="17">2</Channel>
-    </Level>
-   </Slider>
    <SoloFrame Caption="6 Hispaniola" ID="25">
     <WindowState Visible="True" X="926" Y="47" Width="424" Height="282"/>
     <AllowResize>True</AllowResize>
@@ -548,16 +575,7 @@
       <BackgroundColor>4282664004</BackgroundColor>
       <Font>Arial,13,-1,5,700,0,0,0,0,0,0,0,0,0,0,1,Bold</Font>
      </Appearance>
-     <Function ID="24"/>
-     <Action>Toggle</Action>
-    </Button>
-    <Button Caption="6 Hispaniola" ID="9">
-     <WindowState Visible="True" X="15" Y="62" Width="94" Height="94"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-      <Font>Arial,13,-1,5,700,0,0,0,0,0,0,0,0,0,0,1,Bold</Font>
-     </Appearance>
-     <Function ID="25"/>
+     <Function ID="4294967295"/>
      <Action>Toggle</Action>
     </Button>
     <Button Caption="6.2 Lightning" ID="7">
@@ -566,7 +584,16 @@
       <BackgroundColor>4282664004</BackgroundColor>
       <Font>Arial,13,-1,5,700,0,0,0,0,0,0,0,0,0,0,1,Bold</Font>
      </Appearance>
-     <Function ID="31"/>
+     <Function ID="4294967295"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="6 Hispaniola" ID="9">
+     <WindowState Visible="True" X="15" Y="62" Width="94" Height="94"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+      <Font>Arial,13,-1,5,700,0,0,0,0,0,0,0,0,0,0,1,Bold</Font>
+     </Appearance>
+     <Function ID="4294967295"/>
      <Action>Toggle</Action>
     </Button>
    </SoloFrame>
@@ -577,15 +604,6 @@
     <ShowEnableButton>True</ShowEnableButton>
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
-    <Button Caption="5 Bristol Docks" ID="8">
-     <WindowState Visible="True" X="78" Y="47" Width="94" Height="94"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-      <Font>Arial,13,-1,5,700,0,0,0,0,0,0,0,0,0,0,1,Bold</Font>
-     </Appearance>
-     <Function ID="17"/>
-     <Action>Toggle</Action>
-    </Button>
     <Button Caption="Disco 2" ID="18">
      <WindowState Visible="True" X="204" Y="157" Width="94" Height="78"/>
      <Appearance>
@@ -600,6 +618,15 @@
       <BackgroundColor>4282664004</BackgroundColor>
      </Appearance>
      <Function ID="9"/>
+     <Action>Toggle</Action>
+    </Button>
+    <Button Caption="5 Bristol Docks" ID="8">
+     <WindowState Visible="True" X="78" Y="47" Width="94" Height="94"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+      <Font>Arial,13,-1,5,700,0,0,0,0,0,0,0,0,0,0,1,Bold</Font>
+     </Appearance>
+     <Function ID="4294967295"/>
      <Action>Toggle</Action>
     </Button>
     <Button Caption="Chaser Disco" ID="24">
@@ -625,14 +652,6 @@
    <ShowEnableButton>True</ShowEnableButton>
    <Collapsed>False</Collapsed>
    <Disabled>False</Disabled>
-   <Button Caption="6.2 Lightning" ID="31">
-    <WindowState Visible="True" X="448" Y="560" Width="105" Height="105"/>
-    <Appearance>
-     <BackgroundColor>4282664004</BackgroundColor>
-    </Appearance>
-    <Function ID="31"/>
-    <Action>Toggle</Action>
-   </Button>
    <Frame Caption="Frame 28" ID="27">
     <WindowState Visible="True" X="74" Y="74" Width="311" Height="311"/>
     <AllowResize>True</AllowResize>
@@ -657,6 +676,14 @@
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
    </SoloFrame>
+   <Button Caption="6.2 Lightning" ID="31">
+    <WindowState Visible="True" X="448" Y="560" Width="105" Height="105"/>
+    <Appearance>
+     <BackgroundColor>4282664004</BackgroundColor>
+    </Appearance>
+    <Function ID="4294967295"/>
+    <Action>Toggle</Action>
+   </Button>
   </Frame>
   <Frame Caption="Page 4" ID="3">
    <Appearance>
